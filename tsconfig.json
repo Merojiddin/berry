@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["es2017", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "skipLibCheck" : true,
+    "noUnusedLocals": true,
+    "paths": {
+      "@test/*": ["test/*"],
+      "@src/*": ["src/*"],
+      "@ui/*": ["src/ui/*"],
+      "@models/*": ["src/models/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "config",
+    "src/setupTests.ts",
+    "src/ui/common/components/CyclopeGirls"
+  ]
+}
